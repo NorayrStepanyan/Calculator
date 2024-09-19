@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/gray1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textNumbers"
+        android:layout_width="280sp"
+        android:layout_height="90sp"
+        android:layout_margin="50sp"
+        android:gravity="end"
+        android:hint="0"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/buttonOne"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonTwo"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/buttonThree"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/buttonZero"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonDot"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapegray"
+            android:gravity="center"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/buttonMinusNum"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapegray"
+            android:gravity="center"
+            android:text="-/+"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/buttonValue"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapegray"
+            android:gravity="center"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/buttonSeven"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonEight"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonI"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonMinus"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/buttonFour"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonFive"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonSix"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeorange"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/buttonPlus"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/buttonClear"
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapegray"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/deleteOneNum"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="D"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/separation"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/multiplication"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="5sp"
+            android:background="@drawable/shapeblack"
+            android:gravity="center"
+            android:text="x"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
