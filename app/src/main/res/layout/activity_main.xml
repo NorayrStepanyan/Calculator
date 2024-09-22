@@ -5,47 +5,49 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:background="@color/gray1"
+    android:background="@color/gray1"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textNumbers"
-        android:layout_width="280sp"
+        android:layout_width="390sp"
         android:layout_height="90sp"
-        android:layout_margin="50sp"
+        android:layout_marginVertical="20sp"
+        android:background="@drawable/shapefortext"
         android:gravity="end"
         android:hint="0"
-        android:textColorHint="@color/white"
         android:inputType="number"
         android:text=""
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_blue"
         android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextViewEdits" />
 
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
+        android:layout_width="410sp"
         android:layout_height="wrap_content"
-
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
 
-        <TextView
-            android:id="@+id/buttonOne"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="1"
+            android:text="7"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -53,30 +55,14 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/buttonTwo"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="2"
-            android:textColor="@color/white"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-
-        <TextView
-            android:id="@+id/buttonThree"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
-            android:gravity="center"
-            android:text="3"
+            android:text="8"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -85,12 +71,28 @@ android:background="@color/gray1"
             app:layout_constraintStart_toStartOf="parent" />
 
 
-        <TextView
+        <Button
+            android:id="@+id/buttonI"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_margin="5sp"
+            android:backgroundTint="@color/teal_200"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
             android:id="@+id/percent"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_marginHorizontal="5sp"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="%"
             android:textColor="@color/white"
@@ -106,21 +108,22 @@ android:background="@color/gray1"
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="match_parent"
+        android:layout_width="410sp"
         android:layout_height="wrap_content"
-        android:layout_margin="20sp"
+        android:layout_marginBottom="20sp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
 
-        <TextView
+        <Button
             android:id="@+id/buttonZero"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
             android:text="0"
             android:textColor="@color/white"
@@ -130,12 +133,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/buttonDot"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapegray"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="."
             android:textColor="@color/white"
@@ -147,16 +150,16 @@ android:background="@color/gray1"
             tools:ignore="SpeakableTextPresentCheck" />
 
 
-        <TextView
+        <Button
             android:id="@+id/buttonMinusNum"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapegray"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="-/+"
             android:textColor="@color/white"
-            android:textSize="40sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -164,12 +167,13 @@ android:background="@color/gray1"
             tools:ignore="SpeakableTextPresentCheck" />
 
 
-        <TextView
+        <Button
             android:id="@+id/buttonValue"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapegray"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="="
             android:textColor="@color/white"
@@ -182,22 +186,21 @@ android:background="@color/gray1"
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="410sp"
         android:layout_height="wrap_content"
-
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/buttonSeven"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="7"
+            android:text="1"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -205,14 +208,14 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/buttonEight"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="8"
+            android:text="2"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -220,14 +223,14 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/buttonI"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+        <Button
+            android:id="@+id/buttonThree"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="9"
+            android:text="3"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -235,12 +238,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/buttonMinus"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="-"
             android:textColor="@color/white"
@@ -255,20 +258,19 @@ android:background="@color/gray1"
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
+        android:layout_width="410sp"
         android:layout_height="wrap_content"
-
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
+        <Button
             android:id="@+id/buttonFour"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
             android:text="4"
             android:textColor="@color/white"
@@ -278,12 +280,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/buttonFive"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
             android:text="5"
             android:textColor="@color/white"
@@ -293,12 +295,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/buttonSix"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeorange"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
             android:text="6"
             android:textColor="@color/white"
@@ -308,12 +310,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/buttonPlus"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
             android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="+"
             android:textColor="@color/white"
@@ -328,19 +330,19 @@ android:background="@color/gray1"
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
+        android:layout_width="410sp"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
+        <Button
             android:id="@+id/buttonClear"
-            android:layout_width="70sp"
-            android:layout_height="80sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapegray"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_marginHorizontal="5sp"
+            android:backgroundTint="@color/red"
             android:clickable="true"
             android:gravity="center"
             android:text="C"
@@ -352,12 +354,12 @@ android:background="@color/gray1"
             app:layout_constraintStart_toStartOf="parent" />
 
 
-        <TextView
+        <Button
             android:id="@+id/deleteOneNum"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_marginHorizontal="5sp"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="D"
             android:textColor="@color/white"
@@ -367,12 +369,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/separation"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_marginHorizontal="5sp"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="/"
             android:textColor="@color/white"
@@ -382,12 +384,12 @@ android:background="@color/gray1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
+        <Button
             android:id="@+id/multiplication"
-            android:layout_width="70sp"
-            android:layout_height="70sp"
-            android:layout_margin="5sp"
-            android:background="@drawable/shapeblack"
+            android:layout_width="90sp"
+            android:layout_height="100sp"
+            android:layout_marginHorizontal="5sp"
+            android:backgroundTint="@color/gray"
             android:gravity="center"
             android:text="x"
             android:textColor="@color/white"
