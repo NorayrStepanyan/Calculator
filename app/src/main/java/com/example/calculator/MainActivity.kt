@@ -3,6 +3,7 @@ package com.example.calculator
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.util.TypedValue
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         val buttonEight = findViewById<Button>(R.id.buttonEight)
         val buttonI = findViewById<Button>(R.id.buttonI)
         val textNumbers = findViewById<TextView>(R.id.textNumbers)
+        val textAnswer = findViewById<TextView>(R.id.textAnswer)
 
 
         //tools
@@ -51,34 +53,34 @@ class MainActivity : AppCompatActivity() {
 
         //buttons
         buttonOne.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("1")
+            textNumbers.text = textNumbers.text.toString() + "1"
         }
         buttonTwo.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("2")
+            textNumbers.text = textNumbers.text.toString() + "2"
         }
         buttonThree.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("3")
+            textNumbers.text = textNumbers.text.toString() + "3"
         }
         buttonFour.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("4")
+            textNumbers.text = textNumbers.text.toString() + "4"
         }
         buttonFive.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("5")
+            textNumbers.text = textNumbers.text.toString() + "5"
         }
         buttonSix.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("6")
+            textNumbers.text = textNumbers.text.toString() + "6"
         }
         buttonSeven.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("7")
+            textNumbers.text = textNumbers.text.toString() + "7"
         }
         buttonEight.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("8")
+            textNumbers.text = textNumbers.text.toString() + "8"
         }
         buttonI.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("9")
+            textNumbers.text = textNumbers.text.toString() + "9"
         }
         buttonZero.setOnClickListener {
-            textNumbers.text = textNumbers.text.toString().plus("0")
+            textNumbers.text = textNumbers.text.toString() + "0"
         }
 
         //tools
@@ -103,6 +105,8 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+
         buttonDot.setOnClickListener {
             textNumbers.text = textNumbers.text.toString().plus(".")
         }
@@ -119,11 +123,12 @@ class MainActivity : AppCompatActivity() {
                 textNumbers.text = textNumbers.text.substring(0, textNumbers.length() - 1)
             }
         }
-
         buttonClear.setOnClickListener {
+            textAnswer.text = ""
             textNumbers.text = ""
             pad = 0.0
         }
+
 
 
         buttonValue.setOnClickListener {
@@ -131,7 +136,7 @@ class MainActivity : AppCompatActivity() {
                 val value = ExpressionBuilder(textNumbers.text.toString()).build()
                 val result = value.evaluate()
 
-
+                textAnswer.text = textNumbers.text
                 textNumbers.text = result.toString()
             } catch (e: Exception) {
                 Log.d("error", "null")

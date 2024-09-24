@@ -12,22 +12,38 @@
 
     <TextView
         android:id="@+id/textNumbers"
-        android:layout_width="390sp"
-        android:layout_height="90sp"
-        android:layout_marginVertical="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
         android:background="@drawable/shapefortext"
         android:gravity="end"
         android:hint="0"
-        android:inputType="number"
+        android:maxLines="1"
         android:text=""
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorHint="@color/light_blue"
-        android:textSize="70sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextViewEdits" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:background="@drawable/shapefortext"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:text=""
+        android:textColorHint="@color/light_blue"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textNumbers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <LinearLayout
